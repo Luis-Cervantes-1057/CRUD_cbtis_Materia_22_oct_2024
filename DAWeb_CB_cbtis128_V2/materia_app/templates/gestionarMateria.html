@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion Materias{% endblock %}
+
+{% block  cuerpo %}
+    <h1>Gestionar Materias Luis Cesar Cervantes</h1>
+
+    {% for m in lasMaterias %}
+    <li> {{m.codigo}} --- {{m.nombre}} --- {{m.creditos}}</li>
+    {% endfor %}
+{% endblock %}
